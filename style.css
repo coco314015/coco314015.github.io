@@ -1,0 +1,105 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.everything {
+    position: relative; /* 建立座標系，讓子元素以此為基準 */
+    width: 65%; /* 寬度跟隨螢幕 */
+    margin: 0 auto;
+    line-height: 0; /* 消除圖片下方微小的空白間隙 */
+}
+
+#background_image {
+    width: 100%;
+    height: auto;
+}
+
+#icon {
+    position: absolute;
+    width: 30%;
+    aspect-ratio: 1 / 1;
+    transform: translate(-50%, -50%);
+    top: 4.5%;
+    left: 19%;
+    background-color: transparent; /* 背景透明 */
+    border: none; /* 移除邊框 */
+    cursor: pointer; /* 滑鼠變小手 */
+    padding: 0;
+    background-image: url('04.png');
+    background-size: contain; /* 確保圖片完整縮放入按鈕內 */
+    background-repeat: no-repeat; /* 不重複圖片 */
+    background-position: center; /* 圖片置中 */
+}
+
+#icon:hover {
+    background-image: url('20.png');
+}
+
+.first {
+    position: absolute;
+    width: 55%;
+    aspect-ratio: 1 / 0.55;
+    transform: translate(-50%, -50%);
+    top: 4.6%;
+    left: 68%;
+    transition: opacity 0.5s ease-in-out;
+    opacity: 1;
+}
+
+.fade-out {
+    opacity: 0;
+}
+
+.bird {
+    position: absolute;
+    width: 17%;
+    aspect-ratio: 1 / 1;
+    transform: translate(-50%, -100%);
+    background-color: transparent; /* 背景透明 */
+    border: none; /* 移除邊框 */
+    cursor: pointer; /* 滑鼠變小手 */
+    padding: 0;
+    background-image: url('09.png');
+    background-size: contain; /* 確保圖片完整縮放入按鈕內 */
+    background-repeat: no-repeat; /* 不重複圖片 */
+    background-position: center; /* 圖片置中 */
+
+    transition: background-image 0.3s ease;
+}
+
+.bird:hover {
+    background-image: url('08.png');
+}
+
+.words {
+    position: absolute;
+    width: 18%;
+    aspect-ratio: 1 / 0.3;
+    transform: translate(-50%, -5%);
+}
+
+.long_word {
+    position: absolute;
+    width: 90%;
+    transform: translate(-50%, -100%);
+}
+
+.products {
+    position: absolute;
+    width: 23%;
+    aspect-ratio: 1 / 1;
+    transform: translate(-50%, -100%);
+}
+
+.products:hover {
+    width: 25.5%;
+    aspect-ratio: 1 / 1;
+}
+
+.per {
+    position: absolute;
+    width: 22.5%;
+    aspect-ratio: 1 / 0.4;
+    transform: translate(-50%, -5%);
+}
